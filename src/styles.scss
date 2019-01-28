@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* RGB */
+$white: #F8F9F9;
+$lightgray: #979DB7;
+$red: #C54B60;
+$purple: #47204E;
+$orange: #CC7D5A;
+$black: #111111;
+
+$font-stack: Roboto, Helvetica, sans-serif;
+
+body {
+    background-color: $white;
+    font-family: $font-stack;
+}

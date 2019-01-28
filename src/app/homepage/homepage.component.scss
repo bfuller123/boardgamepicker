@@ -1,0 +1,27 @@
+@import '../../styles.scss';
+
+.page {
+    display: grid;
+    grid-template-columns: 0.1% 20% auto 2%;
+    grid-column-gap: 1%;
+    margin-top: -2%;
+    font-family: $font-stack;
+}
+
+.search {
+    border: 3px solid rgba(0,0,0, .4);
+    background-color: $purple;
+    padding: 10% 0 160% 12%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.content {
+    background-color: $white;
+    grid-column-start: 3;
+}
+
+.search, .content {
+    border-bottom-left-radius: .33em;
+    border-bottom-right-radius: .33em;
+}

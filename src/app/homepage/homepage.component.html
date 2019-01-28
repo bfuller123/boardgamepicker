@@ -1,0 +1,6 @@
+<div class='page'>
+    <app-searchform class='search' (resultsReceived)='loadResults($event)'></app-searchform>
+    <div class='content'>
+        <app-search-results [gameResults]='games'></app-search-results>
+    </div>
+</div>
