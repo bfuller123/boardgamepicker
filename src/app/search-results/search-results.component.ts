@@ -12,6 +12,18 @@ export class SearchResultsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.gameResults = this.findMatchingGames(6, 500);
+  }
+
+  findMatchingGames(playerCount: number, length: number) {
+    const result = this.gameResults.filter(game => {
+      return game.maxplayers['_attributes'].value >= playerCount && game.minplayers['_attributes'].value <= playerCount;
+    });
+
+    console.log('Filtered');
+    console.log(result);
+
+    return result;
   }
 
 }

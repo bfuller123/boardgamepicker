@@ -26,6 +26,7 @@ export class SearchresultComponent implements OnInit {
     this.playerCountMin = this.game.minplayers['_attributes'].value;
     this.playerCountMax = this.game.maxplayers['_attributes'].value;
     this.image = this.game.image['_text'];
+    this.weight = this.game.statistics.ratings.averageweight['_attributes'].value;
   }
 
   private getName(game: any): string {

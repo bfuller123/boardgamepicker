@@ -1,6 +1,25 @@
 <div class='page'>
-    <app-searchform class='search' (resultsReceived)='loadResults($event)'></app-searchform>
-    <div class='content'>
+    <div class="search">
+      <h2>Search</h2>
+      <h1>Options</h1>
+      <div class='ui-inputgroup'>
+        <span class='ui-inputgroup-addon'><i class='pi pi-user'></i></span>
+        <input [(ngModel)]='username' type='text' placeholder='BGG username' />
+      </div>
+      <div class='ui-inputgroup'>
+        <span class='ui-inputgroup-addon'><i class='pi pi-users'></i></span>
+        <input [(ngModel)]='playerCount' type='number' placeholder='# of players' />
+      </div>
+      <div class='ui-inputgroup'>
+        <span class='ui-inputgroup-addon'><i class='pi pi-clock'></i></span>
+        <input [(ngModel)]='sessionTime' type='number' placeholder='session time (minutes)' />
+      </div>
+      <!-- <p-slider [(ngModel)]='weightValues' [range]='true'></p-slider> -->
+
+      <button (click)='findGames()'>Find Games</button>
+    </div>
+    <div class='content' *ngIf='games'>
+        <h1>GAMES</h1>
         <app-search-results [gameResults]='games'></app-search-results>
     </div>
 </div>

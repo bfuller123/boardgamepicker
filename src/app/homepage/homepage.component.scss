@@ -25,3 +25,25 @@
     border-bottom-left-radius: .33em;
     border-bottom-right-radius: .33em;
 }
+
+input {
+  width: 20em;
+}
+
+h2, h1 {
+    color: $orange;
+    font-size: 300%;
+    font-weight: bolder;
+    text-shadow: 1px 1px #111111;
+}
+
+h1 {
+    margin-left: 28%;
+    margin-bottom: 3%;
+    margin-top: -3%;
+}
+
+h2 {
+    margin-left: -8%;
+    margin-bottom: 0;
+}
